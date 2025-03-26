@@ -30,12 +30,10 @@ export function Home() {
                 color="white"
                 className="mb-6 font-black"
               >
-                Your story starts with us.
+                YOUR OWN CARD IS MADE HERE
               </Typography>
               <Typography variant="lead" color="white" className="opacity-80">
-                This is a simple example of a Landing Page you can build using
-                Material Tailwind. It features multiple components based on the
-                Tailwind CSS and Material Design by Google.
+                You can make your own card by input your card information in 1 minutes.
               </Typography>
             </div>
           </div>
@@ -57,8 +55,42 @@ export function Home() {
             ))}
           </div>
           <div className="mt-32 flex flex-wrap items-center">
+
+
             <div className="mx-auto -mt-8 w-full px-4 md:w-5/12">
-              <div className="mb-6 inline-flex h-16 w-16 items-center justify-center rounded-full bg-blue-gray-900 p-2 text-center shadow-lg">
+
+            <PageTitle section="Contact Us">
+              Complete this form and you will get back your card in 24 hours.
+            </PageTitle>
+            <form className="mx-auto w-full mt-12">
+              <div className="mb-8 flex gap-8">
+                <Input variant="outlined" size="lg" label="Full Name" />
+                <Input variant="outlined" size="lg" label="Email Address" />
+              </div>
+              <Textarea variant="outlined" size="lg" label="Your Token Id" rows={8} />
+              <Checkbox
+                label={
+                  <Typography
+                    variant="small"
+                    color="gray"
+                    className="flex items-center font-normal"
+                  >
+                    I agree the
+                    <a
+                      href="#"
+                      className="font-medium transition-colors hover:text-gray-900"
+                    >
+                      &nbsp;Terms and Conditions
+                    </a>
+                  </Typography>
+                }
+                containerProps={{ className: "-ml-2.5" }}
+              />
+              <Button variant="gradient" size="lg" className="mt-8" fullWidth>
+                Order My Card
+              </Button>
+            </form>
+              {/* <div className="mb-6 inline-flex h-16 w-16 items-center justify-center rounded-full bg-blue-gray-900 p-2 text-center shadow-lg">
                 <FingerPrintIcon className="h-8 w-8 text-white " />
               </div>
               <Typography
@@ -78,8 +110,10 @@ export function Home() {
                 faster. You can change the text and images and you're good to
                 go. Just make sure you enable them first via JavaScript.
               </Typography>
-              <Button variant="filled">read more</Button>
+              <Button variant="filled">read more</Button> */}
             </div>
+
+
             <div className="mx-auto mt-24 flex w-full justify-center px-4 md:w-4/12 lg:mt-0">
               <Card className="shadow-lg border shadow-gray-500/10 rounded-lg">
                   <ThreeDCard />
@@ -132,10 +166,10 @@ export function Home() {
             ))}
           </div>
         </div>
-      </section>
+      </section> */}
       <section className="relative bg-white py-24 px-4">
         <div className="container mx-auto">
-          <PageTitle section="Co-Working" heading="Build something">
+          {/* <PageTitle section="Co-Working" heading="Build something">
             Put the potentially record low maximum sea ice extent tihs year down
             to low ice. According to the National Oceanic and Atmospheric
             Administration, Ted, Scambos.
@@ -161,8 +195,8 @@ export function Home() {
                 </Typography>
               </Card>
             ))}
-          </div>
-          <PageTitle section="Contact Us" heading="Want to work with us?">
+          </div> */}
+          {/* <PageTitle section="Contact Us" heading="Want to work with us?">
             Complete this form and we will get back to you in 24 hours.
           </PageTitle>
           <form className="mx-auto w-full mt-12 lg:w-5/12">
@@ -192,9 +226,9 @@ export function Home() {
             <Button variant="gradient" size="lg" className="mt-8" fullWidth>
               Send Message
             </Button>
-          </form>
+          </form> */}
         </div>
-      </section> */}
+      </section>
       <div className="bg-white">
         <Footer />
       </div>

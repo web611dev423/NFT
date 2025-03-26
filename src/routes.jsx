@@ -23,8 +23,8 @@ export const routes = [
   },
   {
     name: "Docs",
-    href: "#",
-    target: "_blank",
+    href: "",
+    // target: "_blank",
     element: "",
   },
 ];

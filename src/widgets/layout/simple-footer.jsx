@@ -41,10 +41,10 @@ export function SimpleFooter({ brandName, brandLink, routes }) {
 }
 
 SimpleFooter.defaultProps = {
-  brandName: "Creative Tim",
+  brandName: "NFT Card",
   brandLink: "#",
   routes: [
-    { name: "Creative Tim", path: "#" },
+    { name: "NFT Card", path: "#" },
     { name: "About Us", path: "#" },
     { name: "Blog", path: "#" },
     { name: "License", path: "#" },
